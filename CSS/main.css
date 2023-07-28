@@ -165,6 +165,7 @@ body {
     background: transparent;
     backdrop-filter: blur(20px);
     position: absolute;
+    z-index: -1;
     overflow: hidden;
 }
 
