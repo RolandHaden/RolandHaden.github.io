@@ -8,7 +8,7 @@ body {
     background-image: url(../Assets/backgroundMoving.gif);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100em;
+    background-size: cover;
 }
 
 @media screen and (max-width: 1000px) {
