@@ -24,6 +24,7 @@ body {
 
 .waviy {
     position: relative;
+    z-index: 5;
     display: flex;
     justify-content: center;
     flex-direction: row;
