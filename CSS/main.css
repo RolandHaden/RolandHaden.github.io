@@ -168,7 +168,13 @@ body {
     overflow: hidden;
 }
 
-
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
+    .glass {
+      background: transparent;
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+    }
+  }
 
 .box {
     display: flex;
