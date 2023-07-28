@@ -1,0 +1,284 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../Assets/backgroundMoving.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100em;
+}
+
+@media screen and (max-width: 1000px) {
+    /* Add any specific styles for smaller screens here */
+    /* For example, you can prevent expansion by setting a fixed width */
+    body {
+    overflow: scroll;
+      max-width: 768px;
+      margin: 0 auto; /* Center the content horizontally */
+      background-size: 200em;
+    }
+  }
+
+.waviy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 80px;
+    color: rgb(47, 47, 47);
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    animation: flip 10s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+.firstName {
+    margin-right: 20px;
+}
+.lastName {
+    margin-right: 20px;
+}
+
+.menu{
+    padding: 10px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myObject:not(.active):hover{
+    filter: invert(1);
+    transition: 0.3s;
+}
+
+#myObject.active{
+    background-color: black;
+    border-radius: 32px;
+    width: 60vw;
+    transition: 0.2s;
+
+}
+
+#myObject.active + .menuLinks{
+    visibility: visible;
+}
+
+
+.link{
+    pointer-events: all;
+}
+
+.link:hover{
+    cursor: pointer;
+    background-image: url("../Assets/backgroundMoving.gif");
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari support */
+    color: transparent;
+    animation: animatedColor 2s infinite;
+    background-size: cover;
+}
+
+@keyframes animatedColor {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+  }
+
+.menuLinks img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.ring{
+    width: 50px;
+    height: 50px;
+    border-radius: 32px;
+    cursor:pointer;
+    transition: 0.2s;
+}
+
+.ringClose{
+    visibility: hidden;
+    padding: 15px;
+    pointer-events: none;
+    left:0;
+    top:0;
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+    filter: invert(1);
+    transition: 0.2s;
+    position: absolute;
+    z-index: 5;
+}
+
+.menuLinks {
+    pointer-events: none;
+    visibility: hidden;
+    justify-content: space-evenly;
+    display: flex;
+    position: absolute;
+    left: 50px;
+    width: 50vw;
+    background:transparent;
+    border:none;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+}
+.glass {
+    /* Frosted Background */
+    display: flex;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100em;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    overflow: hidden;
+}
+
+
+
+.box {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    border-style:solid;
+    border-width: 4px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    color:rgb(47, 47, 47);
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+    min-height: 500px;
+}
+
+.profile {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    border-style:solid;
+    border-width: 4px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    color:rgb(47, 47, 47);
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    height: 100%;
+    width: 100%;
+    width: 100%;
+    max-width: 350px;
+    min-height: 500px;
+}
+
+.box2 {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    color:rgb(47, 47, 47);
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    height: 150px;
+    width: 90%;
+}
+
+.links {
+    transition: 0.3s;
+    border: none;
+    cursor:pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    color:rgb(47, 47, 47);
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    height: 70px;
+    width: 70%;
+}
+
+.links:hover {
+    transition: 0.3s;
+    background: url(../Assets/backgroundMoving.gif);
+    background-size: cover;
+    color: rgb(47, 47, 47);
+    border-color: rgb(47, 47, 47);
+    border-style: solid;
+    border-width: 4px;
+}
+
+.scroll{
+    border-top-style: groove;
+    border-top-width: 4px;
+    border-top-color: black;
+    width:100%;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll; 
+    height:100%;
+    max-height: 500px;
+}
+
+.me {
+    width: 70%;
+    max-width: 200px;
+    border-radius: 100%;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.socialIcon {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+}
