@@ -223,10 +223,12 @@ body {
 
 .repo-item {
     display: flex;
+    flex-wrap: wrap;
     padding: 15px;
     flex-direction: column;
     flex-shrink: 0;
     justify-content: center;
+    align-items: center;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
@@ -236,11 +238,15 @@ body {
     font-family: 'Playfair Display', serif;
     height: fit-content;
     width: 90%;
+
 }
 
 .repo-item .name-element {
+
+
     font-weight: bolder;
     font-size: 2em;
+
   }
 
   .repo-item .url-element {
@@ -303,6 +309,7 @@ body {
     align-items: center;
     flex-direction: column;
     overflow-y: scroll; 
+    overflow-x:hidden;
     height:100%;
     max-height: 500px;
 }
