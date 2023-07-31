@@ -221,8 +221,10 @@ body {
     min-height: 500px;
 }
 
-.box2 {
+.repo-item {
     display: flex;
+    padding: 15px;
+    flex-direction: column;
     flex-shrink: 0;
     justify-content: center;
     margin: 10px;
@@ -232,9 +234,36 @@ body {
     color:rgb(47, 47, 47);
     position: relative;
     font-family: 'Playfair Display', serif;
-    height: 150px;
+    height: fit-content;
     width: 90%;
 }
+
+.repo-item .name-element {
+    font-weight: bolder;
+    font-size: 2em;
+  }
+
+  .repo-item .url-element {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-width: 4px;
+    border-style: solid;
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+    margin-inline: auto;
+  }
+
+  .repo-item .link-element {
+    background-image: url("../Assets/backgroundMoving.gif");
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari support */
+    color: transparent;
+    animation: animatedColor 2s infinite;
+    background-size: cover;
+
+  }
 
 .links {
     transition: 0.3s;
