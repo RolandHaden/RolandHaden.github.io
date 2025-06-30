@@ -39,7 +39,7 @@ body {
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
     animation: flip 10s infinite;
-    animation-delay: calc(.2s * var(--i))
+    animation-delay: calc(.2s * var(--i));
   }
   @keyframes flip {
     0%,80% {
