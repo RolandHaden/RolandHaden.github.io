@@ -16,3 +16,8 @@ myObject.addEventListener("blur", () => {
   ringClose.style.visibility = "hidden";
 });
 
+ringClose.addEventListener("click", () => {
+  myObject.classList.remove("active");
+  ringClose.style.visibility = "hidden";
+});
+
