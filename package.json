@@ -1,0 +1,11 @@
+{
+  "name": "rolandhaden-github-io",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "jest-environment-jsdom": "^30.0.2"
+  }
+}
