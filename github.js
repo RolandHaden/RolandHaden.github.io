@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("https://api.github.com/users/RolandHaden/repos")
     .then((response) => response.json())
     .then((data) => {
+      // Sort repositories by most recently updated
+      data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+
       const reposArray = data.map((repo) => ({
         name: repo.name,
         html_url: repo.html_url,
