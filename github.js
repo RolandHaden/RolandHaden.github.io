@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const urlElement = document.createElement("p");
       const urlLink = document.createElement("a");
-      urlElement.classList.add("url-element"); // Assign the name-element class
-      urlLink.classList.add("link-element"); // Assign the name-element class
+      urlElement.classList.add("url-element"); // Assign the url-element class
+      urlLink.classList.add("link-element"); // Assign the link-element class
 
       urlLink.href = repo.html_url;
       urlLink.target = "_blank";
