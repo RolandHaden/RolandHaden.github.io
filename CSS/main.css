@@ -9,6 +9,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Comic Neue', cursive;
 }
 
 @media screen and (max-width: 1000px) {
@@ -37,7 +38,7 @@ body {
     font-size: 80px;
     color: rgb(47, 47, 47);
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Comic Neue', cursive;
     animation: flip 10s infinite;
     animation-delay: calc(.2s * var(--i));
   }
@@ -140,7 +141,7 @@ body {
     width: 50vw;
     background:transparent;
     border:none;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Comic Neue', cursive;
     color: white;
 }
 
@@ -191,7 +192,7 @@ body {
     background: transparent;
     color:rgb(47, 47, 47);
     position: relative;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Comic Neue', cursive;
     height: 100%;
     width: 100%;
     max-width: 600px;
@@ -213,7 +214,7 @@ body {
     background: transparent;
     color:rgb(47, 47, 47);
     position: relative;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Comic Neue', cursive;
     height: 100%;
     width: 100%;
     width: 100%;
@@ -235,7 +236,7 @@ body {
     background: transparent;
     color:rgb(47, 47, 47);
     position: relative;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Comic Neue', cursive;
     height: fit-content;
     width: 90%;
 
@@ -284,7 +285,7 @@ body {
     background: transparent;
     color:rgb(47, 47, 47);
     position: relative;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Comic Neue', cursive;
     height: 70px;
     width: 70%;
 }
